@@ -1,0 +1,7 @@
+QUESTION 9
+
+Query
+
+select atx_id, kind, country from agent_transactions
+join agents on agent_transactions.agent_id = agents.agent_id
+join transfers on agent_transactions.u_id = transfers.u_id

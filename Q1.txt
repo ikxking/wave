@@ -1,0 +1,8 @@
+
+
+QUESTION 1
+
+Query
+select count(u_id) from users;
+Comment
+This query counts the number of users using the 'u_id' from the users table.

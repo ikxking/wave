@@ -1,0 +1,5 @@
+QUESTION 4
+
+Query
+select count(atx_id),date_trunc( 'month', when_created ) from agent_transaction group by
+date_trunc( 'month', when_created );

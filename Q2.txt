@@ -1,0 +1,4 @@
+QUESTION 2
+
+Query
+select count (u_id) from transfer where send_amount_currency = 'CFA' or received_amount_currency = 'CFA'

@@ -1,0 +1,10 @@
+QUESTION 8
+
+Query
+select * from transfers 
+join wallets on transfers.dest_wallet_id = wallets.wallet_id
+ 
+select sum(send_amount_scalar) as send_volum, wallets.country, transfers.kind
+from wavetransfers, wallets 
+where (transfers.when_created = DATE_TRUNC ('week', CURRENT_TIMESTAMP - interval '1 week'))
+group by kind, country
